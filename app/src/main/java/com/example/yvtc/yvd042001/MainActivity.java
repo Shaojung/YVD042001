@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
             BufferedReader br = new BufferedReader(fr);
             String str = br.readLine();
             tv.setText(str);
+            br.close();
+            fr.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
